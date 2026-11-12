@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request Private Pay Services | Believe In The Children</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html"><img src="logo.png" alt="Believe In The Children" class="logo"></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="believenet.html">BelieveNet</a></li>
+        <li><a href="private-pay.html" class="active">Private Pay</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" style="padding: 3rem 2rem;">
+    <h1>Private Pay Services</h1>
+    <p>Request services directly. We serve families through private arrangements as well as agency referrals.</p>
+  </section>
+
+  <div class="container">
+    <p class="section-subtitle">Complete the form below and our team will follow up to discuss your needs, availability, and next steps. All inquiries are handled confidentially.</p>
+
+    <div class="form-container">
+      <!-- Formspree or Netlify forms can be connected later. For now, this posts to a placeholder. -->
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <div class="form-group">
+          <label for="name">Full Name *</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number *</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+
+        <div class="form-group">
+          <label for="service">Service of Interest *</label>
+          <select id="service" name="service" required>
+            <option value="">Select a service...</option>
+            <option value="Supervised Visitation">Supervised Visitation</option>
+            <option value="Parent Time Exchange">Parent Time Exchange</option>
+            <option value="Parenting Classes">Parenting Classes</option>
+            <option value="Fatherhood Program">Fatherhood Program (24/7 Dad)</option>
+            <option value="Counseling">Counseling</option>
+            <option value="Transportation">Transportation</option>
+            <option value="Habilitation Services">Habilitation Services</option>
+            <option value="Other">Other / Not Sure</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="county">County</label>
+          <select id="county" name="county">
+            <option value="">Select county (if applicable)</option>
+            <option value="Stephenson">Stephenson</option>
+            <option value="Carroll">Carroll</option>
+            <option value="Lee">Lee</option>
+            <option value="Ogle">Ogle</option>
+            <option value="Whiteside">Whiteside</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Tell us about your situation (optional)</label>
+          <textarea id="message" name="message" placeholder="Brief description of your needs or any relevant details..."></textarea>
+        </div>
+
+        <button type="submit" class="btn" style="width: 100%;">Submit Request</button>
+      </form>
+
+      <p style="margin-top: 1.5rem; text-align: center; color: var(--text-light); font-size: 0.9rem;">
+        Prefer to call? Reach us at <strong>(815) 837-1500</strong>.
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    <p>Believe In The Children, Inc. | 1401 Crestwood Dr, Freeport, IL 61032 | (815) 837-1500</p>
+    <p>&copy; 2026 Believe In The Children. All rights reserved.</p>
+  </footer>
+</body>
+</html>
